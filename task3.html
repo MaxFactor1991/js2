@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        //Усложнил задание с использованием случайных чисел и тренарных операторов для генерирования положительных и отрицательных значений
+        function randomNumber() {
+            return (Math.random() < 0.5 ? -1 : 1) * Math.round(Math.random() * 100);
+        }
+
+        let a = randomNumber();
+        let b = randomNumber();
+        let result = 0;
+        if (a >= 0 && b >= 0) {
+            result = a - b;
+        } else if (a < 0 && b < 0) {
+            result = a * b;
+        } else {
+            result = a + b;
+        }
+        console.log(result);
+    </script>
+</body>
+
+</html>
